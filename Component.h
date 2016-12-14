@@ -10,10 +10,12 @@ class Component
 {
     public:
     Component();
-    string toString() = 0;
+    string toString();
     
     private:
     string identifier;
+    string description;
+    string componentType;
     double retailPrice = 0;
     double boughtPrice = 0;
 };
