@@ -9,8 +9,9 @@ using namespace std;
 class Component
 {
     public:
-    Component();
+    Component(string id, string description, string type, double retail, double boughtFor, int quantity);
     string toString();
+    string getComponentType();
     
     private:
     string identifier;
@@ -18,4 +19,5 @@ class Component
     string componentType;
     double retailPrice = 0;
     double boughtPrice = 0;
+    int quantity = 0;
 };
