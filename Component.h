@@ -9,6 +9,7 @@ using namespace std;
 class Component
 {
     public:
+    Component();
     string toString() = 0;
     
     private:
